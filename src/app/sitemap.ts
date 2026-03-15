@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next"
 
+export const dynamic = "force-static"
+
 import { SITE_INFO } from "@/config/site"
 import { getAllPosts, getPostsByCategory } from "@/features/blog/data/posts"
 
