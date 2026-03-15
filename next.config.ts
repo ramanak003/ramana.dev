@@ -9,7 +9,9 @@ const nextConfig: NextConfig = {
     root: path.join(__dirname, "."),
   },
   devIndicators: false,
+  output: "export",
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
