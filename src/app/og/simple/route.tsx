@@ -10,8 +10,8 @@ export async function GET(request: Request) {
 
   const title = searchParams.get("title")
 
-  const robotoCondensedMedium = await readFile(
-    join(process.cwd(), "src/assets/fonts/RobotoCondensed-Medium.ttf")
+  const geistMedium = await readFile(
+    join(process.cwd(), "src/assets/fonts/Geist-Medium.ttf")
   )
 
   return new ImageResponse(
@@ -72,7 +72,7 @@ export async function GET(request: Request) {
         <h1
           tw="text-center font-medium"
           style={{
-            fontFamily: "RobotoCondensed",
+            fontFamily: "Geist Sans",
             fontSize: 64,
           }}
         >
@@ -85,8 +85,8 @@ export async function GET(request: Request) {
       height: 630,
       fonts: [
         {
-          name: "RobotoCondensed",
-          data: robotoCondensedMedium,
+          name: "Geist Sans",
+          data: geistMedium,
           weight: 500,
         },
       ],

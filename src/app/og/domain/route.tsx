@@ -11,12 +11,8 @@ export async function GET(request: Request) {
   const domain = searchParams.get("domain")
   const isForSale = searchParams.get("sale") === "true"
 
-  const magistralMedium = await readFile(
-    join(process.cwd(), "src/assets/fonts/Magistral-Medium.ttf")
-  )
-
-  const robotoMedium = await readFile(
-    join(process.cwd(), "src/assets/fonts/Roboto-Medium.ttf")
+  const geistMedium = await readFile(
+    join(process.cwd(), "src/assets/fonts/Geist-Medium.ttf")
   )
 
   return new ImageResponse(
@@ -27,7 +23,7 @@ export async function GET(request: Request) {
             <h1
               tw="mt-8 mb-4 ml-8 mr-8 font-medium"
               style={{
-                fontFamily: "Magistral",
+                fontFamily: "Geist Sans",
                 fontSize: 88,
               }}
             >
@@ -39,7 +35,7 @@ export async function GET(request: Request) {
             <p
               tw="mt-0 mb-0 pt-4 pb-4 pl-8 pr-8 font-medium"
               style={{
-                fontFamily: "Roboto",
+                fontFamily: "Geist Sans",
                 fontSize: 32,
                 color: isForSale ? "#22c55e" : "#71717a",
               }}
@@ -77,13 +73,8 @@ export async function GET(request: Request) {
       height: 630,
       fonts: [
         {
-          name: "Magistral",
-          data: magistralMedium,
-          weight: 500,
-        },
-        {
-          name: "Roboto",
-          data: robotoMedium,
+          name: "Geist Sans",
+          data: geistMedium,
           weight: 500,
         },
       ],
