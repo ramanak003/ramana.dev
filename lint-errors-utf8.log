@@ -1,0 +1,34 @@
+﻿
+> ramana.dev@0.1.0 lint C:\Users\thekk\ramanaportfolio
+> eslint .
+
+
+C:\Users\thekk\ramanaportfolio\src\components\brand-context-menu.tsx
+  3:1  error  Run autofix to sort these imports!  simple-import-sort/imports
+
+C:\Users\thekk\ramanaportfolio\src\components\command-menu.tsx
+  3:1  error  Run autofix to sort these imports!  simple-import-sort/imports
+
+C:\Users\thekk\ramanaportfolio\src\features\portfolio\components\overview\index.tsx
+  90:10  warning  'getGenderIcon' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\thekk\ramanaportfolio\src\features\portfolio\components\overview\job-item.tsx
+  15:34  warning  'company' is defined but never used  @typescript-eslint/no-unused-vars
+  15:43  warning  'website' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\thekk\ramanaportfolio\src\features\portfolio\components\profile-cover.tsx
+  1:1  error  Run autofix to sort these imports!  simple-import-sort/imports
+
+C:\Users\thekk\ramanaportfolio\src\features\portfolio\components\profile-header.tsx
+  1:1  error  Run autofix to sort these imports!  simple-import-sort/imports
+
+C:\Users\thekk\ramanaportfolio\src\features\portfolio\components\social-links.tsx
+  1:1  error  Run autofix to sort these imports!  simple-import-sort/imports
+
+C:\Users\thekk\ramanaportfolio\src\features\portfolio\data\social-links.ts
+  1:1  error  Run autofix to sort these imports!  simple-import-sort/imports
+
+Γ£û 9 problems (6 errors, 3 warnings)
+  6 errors and 0 warnings potentially fixable with the `--fix` option.
+
+ΓÇëELIFECYCLEΓÇë Command failed with exit code 1.

@@ -1,0 +1,35 @@
+﻿node.exe : npm warn 
+Unknown project 
+config "public-hoist-p
+attern". This will 
+stop working in the 
+next major version of 
+npm.
+At C:\nvm4w\nodejs\npm
+.ps1:29 char:3
++   & $NODE_EXE 
+$NPM_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (npm warn U   
+ nknow...version o    
+f npm.:String) []    
+, RemoteException
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+
+> ramana.dev@0.1.0 build
+> next build
+
+Γ¿» Unable to acquire 
+lock at C:\Users\thekk
+\ramanaportfolio\.next
+\lock, is another 
+instance of next 
+build running?
+  Suggestion: If you intended to restart next build, terminate the other process, and then try again.
+
