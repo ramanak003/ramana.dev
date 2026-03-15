@@ -8,10 +8,10 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: path.join(__dirname, "."),
   },
-  basePath: process.env.GITHUB_ACTIONS ? "/ramana.dev" : "",
-  assetPrefix: process.env.GITHUB_ACTIONS ? "/ramana.dev" : "",
+  basePath: process.env.GITHUB_ACTIONS && !process.env.VERCEL ? "/ramana.dev" : "",
+  assetPrefix: process.env.GITHUB_ACTIONS && !process.env.VERCEL ? "/ramana.dev" : "",
   devIndicators: false,
-  output: process.env.GITHUB_ACTIONS ? "export" : undefined,
+  output: process.env.GITHUB_ACTIONS && !process.env.VERCEL ? "export" : undefined,
   images: {
     unoptimized: true,
     remotePatterns: [
