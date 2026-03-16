@@ -3,15 +3,12 @@ import path from "path"
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  transpilePackages: ["next-mdx-remote"],
+  transpilePackages: ["next-mdx-remote", "radix-ui"],
   allowedDevOrigins: ["ramana-pc.local"],
-  turbopack: {
-    root: path.join(__dirname, "."),
-  },
-  basePath: process.env.GITHUB_ACTIONS && !process.env.VERCEL ? "/ramana.dev" : "",
-  assetPrefix: process.env.GITHUB_ACTIONS && !process.env.VERCEL ? "/ramana.dev" : "",
+  basePath: "",
+  assetPrefix: "",
   devIndicators: false,
-  output: process.env.GITHUB_ACTIONS && !process.env.VERCEL ? "export" : undefined,
+  output: "export",
   images: {
     unoptimized: true,
     remotePatterns: [
