@@ -1,7 +1,7 @@
-import { Slot as SlotPrimitive } from "radix-ui"
+import { Slot } from "@radix-ui/react-slot"
 import React from "react"
 
-const Slot = SlotPrimitive.Slot
+const SlotComp = Slot
 
 import { cn } from "@/lib/utils"
 
@@ -33,7 +33,7 @@ function PanelTitle({
   asChild = false,
   ...props
 }: React.ComponentProps<"h2"> & { asChild?: boolean }) {
-  const Comp = asChild ? Slot : "h2"
+  const Comp = asChild ? SlotComp : "h2"
 
   return (
     <Comp
