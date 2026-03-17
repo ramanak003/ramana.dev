@@ -123,15 +123,27 @@ export function ProjectItem({
                 </ProseMono>
               )}
 
-              {project.skills.length > 0 && (
-                <ul className="flex flex-wrap gap-1.5">
-                  {project.skills.map((skill, index) => (
-                    <li key={index} className="flex">
-                      <Tag>{skill}</Tag>
-                    </li>
-                  ))}
-                </ul>
-              )}
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                {project.skills.length > 0 && (
+                  <ul className="flex flex-wrap gap-1.5">
+                    {project.skills.map((skill, index) => (
+                      <li key={index} className="flex">
+                        <Tag>{skill}</Tag>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
+                <a
+                  href={addQueryParams(project.link, UTM_PARAMS)}
+                  target="_blank"
+                  rel="noopener"
+                  className="inline-flex shrink-0 items-center justify-center gap-1.5 rounded-lg border border-border bg-background px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:bg-muted lg:py-1"
+                >
+                  Visit Site
+                  <LinkIcon className="size-3" />
+                </a>
+              </div>
             </div>
           </div>
         </CollapsibleContent>

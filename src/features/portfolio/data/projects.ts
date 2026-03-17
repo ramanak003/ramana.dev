@@ -2,6 +2,34 @@ import type { Project } from "../types/projects"
 
 export const PROJECTS: Project[] = [
   {
+    id: "ramana-dev",
+    title: "ramana.dev",
+    period: {
+      start: "01.2025",
+    },
+    link: "https://ramanak003.github.io/ramana.dev/",
+    skills: [
+      "Open Source",
+      "Next.js 16",
+      "Tailwind CSS v4",
+      "Radix UI",
+      "Motion",
+      "shadcn/ui",
+      "Component Registry",
+      "Vercel",
+    ],
+    description: `A minimal, pixel-perfect dev portfolio, component registry, and blog built with modern web technologies.
+- **Component Registry** – Custom shadcn-like registry for reusable components
+- **MDX Blog** – Content-driven blog with full MDX support
+- **Modern Stack** – Built with Next.js 16 and Tailwind CSS v4
+- **Optimized Performance** – Static export with rich animations and responsive design
+
+[Source Code](https://github.com/ramanak003/ramana.dev)
+`,
+    logo: "/images/projects/ramana-dev-logo.png",
+    isExpanded: true,
+  },
+  {
     id: "quicktask-application",
     title: "QuickTask-Application",
     period: {
@@ -26,32 +54,6 @@ export const PROJECTS: Project[] = [
 - **Cloud Deployment** – Hosted and deployed on Vercel
 `,
     logo: "/images/projects/quicktask-logo.png",
-    isExpanded: true,
-  },
-  {
-    id: "ramana-dev",
-    title: "ramana.dev",
-    period: {
-      start: "01.2025",
-    },
-    link: "https://ramanak003.github.io/ramana.dev/",
-    skills: [
-      "Open Source",
-      "Next.js 16",
-      "Tailwind CSS v4",
-      "Radix UI",
-      "Motion",
-      "shadcn/ui",
-      "Component Registry",
-      "Vercel",
-    ],
-    description: `A minimal, pixel-perfect dev portfolio, component registry, and blog built with modern web technologies.
-- **Component Registry** – Custom shadcn-like registry for reusable components
-- **MDX Blog** – Content-driven blog with full MDX support
-- **Modern Stack** – Built with Next.js 16 and Tailwind CSS v4
-- **Optimized Performance** – Static export with rich animations and responsive design
-`,
-    logo: "/images/projects/ramana-dev-logo.png",
     isExpanded: true,
   },
   {
