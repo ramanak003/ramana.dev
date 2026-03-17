@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   transpilePackages: ["next-mdx-remote", "radix-ui", "motion", "framer-motion"],
   allowedDevOrigins: [],
-  basePath: "/ramana.dev",
+  basePath: "",
   assetPrefix: "",
   devIndicators: false,
   output: "export",
