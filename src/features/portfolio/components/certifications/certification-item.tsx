@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/collapsible"
 import { Separator } from "@/components/ui/separator"
 import { ProseMono } from "@/components/ui/typography"
-import { cn } from "@/lib/utils"
+import { cn, withBasePath } from "@/lib/utils"
 
 import type { Certification } from "../../types/certifications"
 
@@ -31,7 +31,7 @@ export function CertificationItem({
         <div className="flex items-center hover:bg-accent-muted">
           {certification.issuerLogoURL ? (
             <Image
-              src={certification.issuerLogoURL}
+              src={withBasePath(certification.issuerLogoURL)}
               alt={certification.issuer}
               width={32}
               height={32}
@@ -87,9 +87,14 @@ export function CertificationItem({
                       <dt className="sr-only">Issued on</dt>
                       <dd>
                         <time
-                          dateTime={new Date(certification.issueDate).toISOString()}
+                          dateTime={new Date(
+                            certification.issueDate
+                          ).toISOString()}
                         >
-                          {format(new Date(certification.issueDate), "dd.MM.yyyy")}
+                          {format(
+                            new Date(certification.issueDate),
+                            "dd.MM.yyyy"
+                          )}
                         </time>
                       </dd>
                     </dl>

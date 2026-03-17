@@ -3,6 +3,7 @@ import { motion } from "motion/react"
 import Image from "next/image"
 
 import { USER } from "@/features/portfolio/data/user"
+import { withBasePath } from "@/lib/utils"
 import { FlipSentences } from "@/registry/flip-sentences/flip-sentences"
 
 import { PronounceMyName } from "./pronounce-my-name"
@@ -21,10 +22,10 @@ export function ProfileHeader() {
       </div>
 
       <div className="border-t border-edge">
-        <div className="flex items-center gap-4 pl-4 py-4">
+        <div className="flex items-center gap-4 py-4 pl-4">
           <div className="relative size-32 shrink-0 overflow-hidden rounded-full border border-edge">
             <Image
-              src={USER.avatar}
+              src={withBasePath(USER.avatar)}
               alt={USER.displayName}
               fill
               className="object-cover"
@@ -52,7 +53,7 @@ export function ProfileHeader() {
 
             <FlipSentences
               as="p"
-              className="font-mono text-sm font-medium text-zinc-700 dark:text-zinc-300 mt-1"
+              className="mt-1 font-mono text-sm font-medium text-zinc-700 dark:text-zinc-300"
               interval={3}
             >
               {USER.flipSentences}

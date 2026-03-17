@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/tooltip"
 import { ProseMono } from "@/components/ui/typography"
 import { UTM_PARAMS } from "@/config/site"
+import { withBasePath } from "@/lib/utils"
 import { addQueryParams } from "@/utils/url"
 
 import type { Project } from "../../types/projects"
@@ -37,7 +38,7 @@ export function ProjectItem({
         <div className="flex items-center hover:bg-accent-muted">
           {project.logo ? (
             <Image
-              src={project.logo}
+              src={withBasePath(project.logo)}
               alt={project.title}
               width={32}
               height={32}

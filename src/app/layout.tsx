@@ -11,6 +11,7 @@ import { Providers } from "@/components/providers"
 import { META_THEME_COLORS, SITE_INFO } from "@/config/site"
 import { USER } from "@/features/portfolio/data/user"
 import { fontMono, fontSans } from "@/lib/fonts"
+import { withBasePath } from "@/lib/utils"
 
 function getWebSiteJsonLd(): WithContext<WebSite> {
   return {
@@ -79,8 +80,8 @@ export const metadata: Metadata = {
     images: [SITE_INFO.ogImage],
   },
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    icon: withBasePath("/favicon.ico"),
+    apple: withBasePath("/apple-touch-icon.png"),
   },
 }
 

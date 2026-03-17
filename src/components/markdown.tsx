@@ -6,6 +6,7 @@ import remarkGfm from "remark-gfm"
 import { ImageZoom } from "@/components/kibo-ui/image-zoom"
 import { UTM_PARAMS } from "@/config/site"
 import { rehypeAddQueryParams } from "@/lib/rehype-add-query-params"
+import { withBasePath } from "@/lib/utils"
 
 export function Markdown(props: React.ComponentProps<typeof MarkdownAsync>) {
   return (
@@ -23,11 +24,12 @@ export function Markdown(props: React.ComponentProps<typeof MarkdownAsync>) {
         p: ({ children }) => <div className="mb-4 last:mb-0">{children}</div>,
         img: ({ src, alt }) => {
           if (!src) return null
+          const srcString = typeof src === "string" ? src : String(src)
           return (
             <ImageZoom>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
+              {}
               <img
-                src={src}
+                src={withBasePath(srcString)}
                 alt={alt}
                 className="mx-auto block h-auto max-w-md rounded-lg border border-edge"
               />
