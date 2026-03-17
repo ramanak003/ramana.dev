@@ -270,7 +270,7 @@ export const AWARDS: Award[] = [
     grade: "University",
     date: "2022-11",
     description:
-      "- Organized by Ho Chi Minh City Youth Union\n- Field: Software\n- Project: [Rex Website](https://ramana.dev/projects/rex-website)",
+      "- Organized by Ho Chi Minh City Youth Union\n- Field: Software\n- Project: [Rex Website](https://www.ramana.dev/projects/rex-website)",
     referenceLink:
       "https://drive.google.com/file/d/1gmOG9_FTNAwdeR_eraYMCBBqaYuZOgoJ/view?usp=sharing",
   },

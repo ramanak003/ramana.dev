@@ -58,7 +58,7 @@ export const Index: Record<string, any> = {`;
     {
       $schema: "https://ui.shadcn.com/schema/registry.json",
       name: "ramanak",
-      homepage: "https://ramana.dev/components",
+      homepage: "https://www.ramana.dev/components",
       items: registry.items
         .filter((item) => item.type !== "registry:example")
         .map((item) => {

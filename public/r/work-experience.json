@@ -42,6 +42,6 @@
     "@import \"tw-animate-css\"": {},
     "@plugin @tailwindcss/typography": {}
   },
-  "docs": "https://ramana.dev/components/work-experience-component",
+  "docs": "https://www.ramana.dev/components/work-experience-component",
   "type": "registry:component"
 }

@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "ramanak",
-  "homepage": "https://ramana.dev/components",
+  "homepage": "https://www.ramana.dev/components",
   "items": [
     {
       "name": "utils",
@@ -65,7 +65,7 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://ramana.dev/components/theme-switcher-component",
+      "docs": "https://www.ramana.dev/components/theme-switcher-component",
       "type": "registry:component"
     },
     {
@@ -103,7 +103,7 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://ramana.dev/components/apple-hello-effect",
+      "docs": "https://www.ramana.dev/components/apple-hello-effect",
       "type": "registry:component"
     },
     {
@@ -123,7 +123,7 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://ramana.dev/components/react-wheel-picker",
+      "docs": "https://www.ramana.dev/components/react-wheel-picker",
       "type": "registry:component"
     },
     {
@@ -168,7 +168,7 @@
         "@import \"tw-animate-css\"": {},
         "@plugin @tailwindcss/typography": {}
       },
-      "docs": "https://ramana.dev/components/work-experience-component",
+      "docs": "https://www.ramana.dev/components/work-experience-component",
       "type": "registry:component"
     },
     {
@@ -208,7 +208,7 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://ramana.dev/components/slide-to-unlock",
+      "docs": "https://www.ramana.dev/components/slide-to-unlock",
       "type": "registry:component"
     },
     {
@@ -226,7 +226,7 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://ramana.dev/components/testimonials-marquee",
+      "docs": "https://www.ramana.dev/components/testimonials-marquee",
       "type": "registry:component"
     },
     {

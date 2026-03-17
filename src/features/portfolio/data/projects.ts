@@ -7,7 +7,7 @@ export const PROJECTS: Project[] = [
     period: {
       start: "01.2025",
     },
-    link: "https://ramana.dev",
+    link: "https://www.ramana.dev",
     skills: [
       "Open Source",
       "Next.js 16",
@@ -80,7 +80,7 @@ export const PROJECTS: Project[] = [
     period: {
       start: "01.2022",
     },
-    link: "https://ramana.dev/projects/rex-website",
+    link: "https://www.ramana.dev/projects/rex-website",
     skills: [
       "HTML",
       "CSS",
