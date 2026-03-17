@@ -3,7 +3,7 @@ import type { NavItem } from "@/types/nav"
 
 export const SITE_INFO = {
   name: USER.displayName,
-  url: process.env.APP_URL || "https://www.ramana.dev/",
+  url: process.env.APP_URL || "https://ramanak003.github.io/ramana.dev/",
   ogImage: USER.ogImage,
   description: USER.bio,
   keywords: USER.keywords,
