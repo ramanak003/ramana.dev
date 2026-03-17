@@ -1,3 +1,6 @@
+import fs from "node:fs"
+import path from "node:path"
+
 import { NextResponse } from "next/server"
 import sharp from "sharp"
 import VCard from "vcard-creator"
@@ -38,19 +41,31 @@ export async function GET() {
 
 async function getVCardPhoto(url: string) {
   try {
-    const res = await fetch(url)
+    let buffer: Buffer
+    let contentType: string
 
-    if (!res.ok) {
-      return null
+    if (url.startsWith("/")) {
+      // Handle local path
+      const filePath = path.join(process.cwd(), "public", url)
+      buffer = await fs.promises.readFile(filePath)
+      const ext = path.extname(url).toLowerCase()
+      contentType =
+        ext === ".jpg" || ext === ".jpeg"
+          ? "image/jpeg"
+          : ext === ".png"
+            ? "image/png"
+            : ext === ".webp"
+              ? "image/webp"
+              : ""
+    } else {
+      // Handle remote URL
+      const res = await fetch(url)
+      if (!res.ok) return null
+      buffer = Buffer.from(await res.arrayBuffer())
+      contentType = res.headers.get("Content-Type") || ""
     }
 
-    const buffer = Buffer.from(await res.arrayBuffer())
-    if (buffer.length === 0) {
-      return null
-    }
-
-    const contentType = res.headers.get("Content-Type") || ""
-    if (!contentType.startsWith("image/")) {
+    if (buffer.length === 0 || !contentType.startsWith("image/")) {
       return null
     }
 
@@ -61,7 +76,8 @@ async function getVCardPhoto(url: string) {
       image,
       mine: "jpeg",
     }
-  } catch {
+  } catch (error) {
+    console.error("Error loading vCard photo:", error)
     return null
   }
 }

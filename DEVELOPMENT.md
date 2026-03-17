@@ -15,8 +15,8 @@ Ensure you have the following installed:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/ncdai/chanhdai.com.git minimal-dev-portfolio
-cd minimal-dev-portfolio
+git clone https://github.com/ramanak003/ramana.dev.git ramana.dev
+cd ramana.dev
 ```
 
 ### 2. Install dependencies

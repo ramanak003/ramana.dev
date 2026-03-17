@@ -4,8 +4,8 @@ import path from "path"
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   transpilePackages: ["next-mdx-remote", "radix-ui", "motion", "framer-motion"],
-  allowedDevOrigins: ["ramana-pc.local"],
-  basePath: "",
+  allowedDevOrigins: [],
+  basePath: "/ramana.dev",
   assetPrefix: "",
   devIndicators: false,
   output: "export",

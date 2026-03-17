@@ -4,7 +4,7 @@ import type { User } from "@/features/portfolio/types/user"
 export const USER = {
   firstName: "Ramana",
   lastName: "K",
-  displayName: "Ramana K",
+  displayName: "ramana.dev",
   username: "ramanak003",
   gender: "male",
   pronouns: "he/him",
@@ -50,6 +50,7 @@ I am also an active **Open Source Contributor**, continuously learning and aimin
     "Problem Solver",
     "Open Source Contributor",
     "Full Stack Developer",
+    "ramana.dev",
     "ramanaportfolio",
   ],
   dateCreated: "2023-10-20", // YYYY-MM-DD

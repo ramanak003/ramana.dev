@@ -4,8 +4,8 @@ A minimal, pixel-perfect dev portfolio, component registry, and blog to showcase
 
 → Check out the live site: [ramana.dev](https://ramana.dev)
 
-[![screenshot-dark](https://assets.ramana.dev/images/screenshot-desktop-dark.webp?v=5#gh-dark-mode-only)](https://ramana.dev#gh-dark-mode-only)
-[![screenshot-light](https://assets.ramana.dev/images/screenshot-desktop-light.webp?v=5#gh-light-mode-only)](https://ramana.dev#gh-light-mode-only)
+[![screenshot-dark](https://assets.chanhdai.com/images/screenshot-desktop-dark.webp?v=5#gh-dark-mode-only)](https://ramana.dev#gh-dark-mode-only)
+[![screenshot-light](https://assets.chanhdai.com/images/screenshot-desktop-light.webp?v=5#gh-light-mode-only)](https://ramana.dev#gh-light-mode-only)
 
 ## Overview
 
@@ -88,22 +88,22 @@ This project is proudly supported by:
     <tr>
       <td>
         <a href="https://shadcnstudio.com?utm_source=ramana.dev&utm_medium=banner&utm_campaign=github#gh-light-mode-only">
-          <img src="https://assets.ramana.dev/images/sponsors/shadcnstudio.svg?v=2#gh-light-mode-only" alt="shadcnstudio.com" />
+          <img src="https://assets.chanhdai.com/images/sponsors/shadcnstudio.svg?v=2#gh-light-mode-only" alt="shadcnstudio.com" />
         </a>
         <a href="https://shadcnstudio.com?utm_source=ramana.dev&utm_medium=banner&utm_campaign=github#gh-dark-mode-only">
-          <img src="https://assets.ramana.dev/images/sponsors/shadcnstudio-dark.svg?v=2#gh-dark-mode-only" alt="shadcnstudio.com" />
+          <img src="https://assets.chanhdai.com/images/sponsors/shadcnstudio-dark.svg?v=2#gh-dark-mode-only" alt="shadcnstudio.com" />
         </a>
       </td>
       <td>
         <a href="https://shadcnspace.com#gh-light-mode-only">
           <img
-            src="https://assets.ramana.dev/images/sponsors/shadcnspace.svg?v=3#gh-light-mode-only"
+            src="https://assets.chanhdai.com/images/sponsors/shadcnspace.svg?v=3#gh-light-mode-only"
             alt="Shadcn Space"
           />
         </a>
         <a href="https://shadcnspace.com#gh-dark-mode-only">
           <img
-            src="https://assets.ramana.dev/images/sponsors/shadcnspace-dark.svg?v=3#gh-dark-mode-only"
+            src="https://assets.chanhdai.com/images/sponsors/shadcnspace-dark.svg?v=3#gh-dark-mode-only"
             alt="Shadcn Space"
           />
         </a>
@@ -113,13 +113,13 @@ This project is proudly supported by:
       <td>
         <a href="https://shadcraft.com?utm_source=ramana.dev#gh-light-mode-only">
           <img
-            src="https://assets.ramana.dev/images/sponsors/shadcraft.svg?v=1#gh-light-mode-only"
+            src="https://assets.chanhdai.com/images/sponsors/shadcraft.svg?v=1#gh-light-mode-only"
             alt="Shadcraft"
           />
         </a>
         <a href="https://shadcraft.com?utm_source=ramana.dev#gh-dark-mode-only">
           <img
-            src="https://assets.ramana.dev/images/sponsors/shadcraft-dark.svg?v=1#gh-dark-mode-only"
+            src="https://assets.chanhdai.com/images/sponsors/shadcraft-dark.svg?v=1#gh-dark-mode-only"
             alt="Shadcraft"
           />
         </a>
@@ -127,13 +127,13 @@ This project is proudly supported by:
       <td>
         <a href="https://uirules.com?utm_source=ramana.dev#gh-light-mode-only">
           <img
-            src="https://assets.ramana.dev/images/sponsors/uirules.svg?v=1#gh-light-mode-only"
+            src="https://assets.chanhdai.com/images/sponsors/uirules.svg?v=1#gh-light-mode-only"
             alt="UI Rules"
           />
         </a>
         <a href="https://uirules.com?utm_source=ramana.dev#gh-dark-mode-only">
           <img
-            src="https://assets.ramana.dev/images/sponsors/uirules-dark.svg?v=1#gh-dark-mode-only"
+            src="https://assets.chanhdai.com/images/sponsors/uirules-dark.svg?v=1#gh-dark-mode-only"
             alt="UI Rules"
           />
         </a>
@@ -143,13 +143,13 @@ This project is proudly supported by:
       <td>
         <a href="https://reactbits.dev?utm_source=ramana.dev#gh-light-mode-only">
           <img
-            src="https://assets.ramana.dev/images/sponsors/reactbits.svg?v=1#gh-light-mode-only"
+            src="https://assets.chanhdai.com/images/sponsors/reactbits.svg?v=1#gh-light-mode-only"
             alt="React Bits"
           />
         </a>
         <a href="https://reactbits.dev?utm_source=ramana.dev#gh-dark-mode-only">
           <img
-            src="https://assets.ramana.dev/images/sponsors/reactbits-dark.svg?v=1#gh-dark-mode-only"
+            src="https://assets.chanhdai.com/images/sponsors/reactbits-dark.svg?v=1#gh-dark-mode-only"
             alt="React Bits"
           />
         </a>
@@ -157,13 +157,13 @@ This project is proudly supported by:
       <td>
         <a href="https://openpanel.dev?utm_source=ramana.dev#gh-light-mode-only">
           <img
-            src="https://assets.ramana.dev/images/sponsors/openpanel.svg?v=1#gh-light-mode-only"
+            src="https://assets.chanhdai.com/images/sponsors/openpanel.svg?v=1#gh-light-mode-only"
             alt="OpenPanel"
           />
         </a>
         <a href="https://openpanel.dev?utm_source=ramana.dev#gh-dark-mode-only">
           <img
-            src="https://assets.ramana.dev/images/sponsors/openpanel-dark.svg?v=1#gh-dark-mode-only"
+            src="https://assets.chanhdai.com/images/sponsors/openpanel-dark.svg?v=1#gh-dark-mode-only"
             alt="OpenPanel"
           />
         </a>

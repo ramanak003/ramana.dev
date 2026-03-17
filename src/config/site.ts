@@ -2,7 +2,7 @@ import { USER } from "@/features/portfolio/data/user"
 import type { NavItem } from "@/types/nav"
 
 export const SITE_INFO = {
-  name: USER.displayName,
+  name: "ramana.dev",
   url: process.env.APP_URL || "https://ramanak003.github.io/ramana.dev/",
   ogImage: USER.ogImage,
   description: USER.bio,
@@ -28,5 +28,5 @@ export const SOURCE_CODE_GITHUB_URL = "https://github.com/ramanak003/ramana.dev"
 export const SPONSORSHIP_URL = "https://github.com/sponsors/ramanak003"
 
 export const UTM_PARAMS = {
-  utm_source: "ramana.dev",
+  utm_source: "ramanak003.github.io/ramana.dev/",
 }
