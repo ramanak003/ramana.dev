@@ -3,24 +3,39 @@ import path from "path"
 import { fileURLToPath } from "url"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
-const contentDir = path.join(__dirname, "src", "features", "blog", "content")
+const contentDirs = [
+  path.join(__dirname, "src", "features", "blog", "content"),
+  path.join(__dirname, "src", "config"),
+  path.join(__dirname, "src", "features", "portfolio", "data"),
+  path.join(__dirname, "src", "registry"),
+]
 
-const files = fs.readdirSync(contentDir).filter((f) => f.endsWith(".mdx"))
+contentDirs.forEach((dir) => {
+  if (!fs.existsSync(dir)) return
+  const files = fs
+    .readdirSync(dir)
+    .filter(
+      (f) => f.endsWith(".mdx") || f.endsWith(".ts") || f.endsWith(".tsx")
+    )
 
-files.forEach((file) => {
-  const filePath = path.join(contentDir, file)
-  let content = fs.readFileSync(filePath, "utf8")
+  files.forEach((file) => {
+    const filePath = path.join(dir, file)
+    let content = fs.readFileSync(filePath, "utf8")
 
-  // Fix typo and standardize in one go
-  const original = content
-  content = content.replace(
-    /https:\/\/ramana\.devr\//g,
-    "https://www.ramana.dev/r/"
-  )
-  content = content.replace(/https:\/\/ramana\.dev/g, "https://www.ramana.dev")
+    const original = content
+    // Standardize to root ramana.dev
+    content = content.replace(
+      /https:\/\/www\.ramana\.dev/g,
+      "https://ramana.dev"
+    )
+    content = content.replace(
+      /https:\/\/ramana\.devr\//g,
+      "https://ramana.dev/r/"
+    )
 
-  if (content !== original) {
-    fs.writeFileSync(filePath, content)
-    console.log(`Updated ${file}`)
-  }
+    if (content !== original) {
+      fs.writeFileSync(filePath, content)
+      console.log(`Updated ${file} in ${dir}`)
+    }
+  })
 })

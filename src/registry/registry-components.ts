@@ -16,7 +16,7 @@ export const components: Registry["items"] = [
         type: "registry:component",
       },
     ],
-    docs: "https://www.ramana.dev/components/theme-switcher-component",
+    docs: "https://ramana.dev/components/theme-switcher-component",
   },
   {
     name: "flip-sentences",
@@ -47,7 +47,7 @@ export const components: Registry["items"] = [
         type: "registry:component",
       },
     ],
-    docs: "https://www.ramana.dev/components/apple-hello-effect",
+    docs: "https://ramana.dev/components/apple-hello-effect",
   },
   {
     name: "wheel-picker",
@@ -64,7 +64,7 @@ export const components: Registry["items"] = [
         type: "registry:component",
       },
     ],
-    docs: "https://www.ramana.dev/components/react-wheel-picker",
+    docs: "https://ramana.dev/components/react-wheel-picker",
   },
   {
     name: "work-experience",
@@ -100,7 +100,7 @@ export const components: Registry["items"] = [
       '@import "tw-animate-css"': {},
       "@plugin @tailwindcss/typography": {},
     },
-    docs: "https://www.ramana.dev/components/work-experience-component",
+    docs: "https://ramana.dev/components/work-experience-component",
   },
   {
     name: "shimmering-text",
@@ -132,7 +132,7 @@ export const components: Registry["items"] = [
         type: "registry:component",
       },
     ],
-    docs: "https://www.ramana.dev/components/slide-to-unlock",
+    docs: "https://ramana.dev/components/slide-to-unlock",
   },
   {
     name: "testimonials-marquee",
@@ -148,7 +148,7 @@ export const components: Registry["items"] = [
         type: "registry:component",
       },
     ],
-    docs: "https://www.ramana.dev/components/testimonials-marquee",
+    docs: "https://ramana.dev/components/testimonials-marquee",
   },
   {
     name: "github-stars",

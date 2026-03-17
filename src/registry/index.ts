@@ -8,7 +8,7 @@ import { lib } from "./registry-lib"
 
 export const registry = {
   name: "ramanak",
-  homepage: "https://www.ramana.dev/components",
+  homepage: "https://ramana.dev/components",
   items: [
     ...lib,
     ...hook,
