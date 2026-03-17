@@ -8,7 +8,7 @@
     "@c15t/nextjs"
   ],
   "registryDependencies": [
-    "@ncdai/utils",
+    "@ramanak/utils",
     "button"
   ],
   "files": [

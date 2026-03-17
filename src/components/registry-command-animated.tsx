@@ -94,7 +94,7 @@ export function RegistryCommandAnimated() {
 
             <FlipSentences
               className="text-foreground"
-              as={motion.span}
+              as="span"
               variants={{
                 initial: { y: -12, opacity: 0 },
                 animate: { y: 0, opacity: 1 },

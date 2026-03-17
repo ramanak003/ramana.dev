@@ -270,7 +270,7 @@ export const components: Registry["items"] = [
     title: "Consent Manager",
     author: "ramanak <ramanak.dev@gmail.com>",
     dependencies: ["@c15t/nextjs"],
-    registryDependencies: ["@ncdai/utils", "button"],
+    registryDependencies: ["@ramanak/utils", "button"],
     files: [
       {
         path: "src/components/consent-manager.tsx",

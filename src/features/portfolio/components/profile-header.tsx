@@ -1,3 +1,4 @@
+"use client"
 import { motion } from "motion/react"
 import Image from "next/image"
 
@@ -50,7 +51,7 @@ export function ProfileHeader() {
             </div>
 
             <FlipSentences
-              as={motion.p}
+              as="p"
               className="font-mono text-sm font-medium text-zinc-700 dark:text-zinc-300 mt-1"
               interval={3}
             >

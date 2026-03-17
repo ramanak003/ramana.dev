@@ -2,7 +2,7 @@
 
 import type { Transition, Variants } from "motion/react"
 import { AnimatePresence, motion } from "motion/react"
-import { Children, useEffect, useState } from "react"
+import * as React from "react"
 
 import { cn } from "@/lib/utils"
 
@@ -12,7 +12,7 @@ const defaultVariants: Variants = {
   exit: { y: 8, opacity: 0 },
 }
 
-type MotionElement = typeof motion.p | typeof motion.span | typeof motion.code
+type MotionElement = "p" | "span" | "code" | typeof motion.p
 
 type Props = {
   as?: MotionElement
@@ -27,7 +27,7 @@ type Props = {
 }
 
 export function FlipSentences({
-  as: Component = motion.p,
+  as = "p",
   className,
   children,
 
@@ -37,11 +37,14 @@ export function FlipSentences({
 
   onIndexChange,
 }: Props) {
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [isClient, setIsClient] = React.useState(false)
+  React.useEffect(() => setIsClient(true), [])
 
-  const items = Children.toArray(children)
+  const [currentIndex, setCurrentIndex] = React.useState(0)
 
-  useEffect(() => {
+  const items = React.Children.toArray(children)
+
+  React.useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => {
         const next = (prev + 1) % items.length
@@ -52,6 +55,15 @@ export function FlipSentences({
 
     return () => clearInterval(timer)
   }, [items.length, interval, onIndexChange])
+
+  const Component = isClient
+    ? typeof as === "string"
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      ? (motion as any)[as]
+      : as
+    : typeof as === "string"
+      ? as
+      : "p"
 
   return (
     <AnimatePresence mode="wait" initial={false}>
