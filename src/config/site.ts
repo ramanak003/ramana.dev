@@ -28,5 +28,5 @@ export const SOURCE_CODE_GITHUB_URL = "https://github.com/ramanak003/ramana.dev"
 export const SPONSORSHIP_URL = "https://github.com/sponsors/ramanak003"
 
 export const UTM_PARAMS = {
-  utm_source: "ramanak003.github.io/ramana.dev/",
+  utm_source: "ramana.dev",
 }

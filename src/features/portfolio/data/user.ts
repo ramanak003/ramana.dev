@@ -18,6 +18,7 @@ export const USER = {
   phoneNumber: "KzkxOTM0NTY0MzQ5NA==", // +919345643494
   email: "cmFtYW5hay5kZXZAZ21haWwuY29t", // base64 encoded
   website: "https://ramanak003.github.io/ramana.dev/",
+  websiteDisplay: "ramana.dev",
   jobTitle: "Fullstack Developer @ Duhzine IT Solutions",
   jobs: [
     {
