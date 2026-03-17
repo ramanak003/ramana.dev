@@ -19,6 +19,6 @@ export const SOCIAL_LINKS: SocialLink[] = [
     icon: `${ASSETS_URL}/images/link-icons/linkedin.webp?t=1759581475`,
     title: "LinkedIn",
     description: "ramanak",
-    href: "https://www.linkedin.com/in/",
+    href: "https://www.linkedin.com/in/ramanak",
   },
 ]

@@ -172,7 +172,7 @@ This project is proudly supported by:
   </tbody>
 </table>
 
-> Found this project useful? [Sponsor me](https://github.com/sponsors/ncdai) to help with support and maintenance.
+> Found this project useful? [Sponsor me](https://github.com/sponsors/ramanak003) to help with support and maintenance.
 
 ## Stats
 
@@ -180,7 +180,7 @@ This project is proudly supported by:
 
 ## Star History
 
-[![Star History](https://starchart.cc/ncdai/chanhdai.com.svg?variant=adaptive&line=%23d37f2c)](https://starchart.cc/ncdai/chanhdai.com)
+[![Star History](https://starchart.cc/ramanak003/ramana.dev.svg?variant=adaptive&line=%23d37f2c)](https://starchart.cc/ramanak003/ramana.dev)
 
 ## Acknowledgments
 

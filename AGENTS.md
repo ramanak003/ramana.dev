@@ -1,6 +1,6 @@
-# AI Agent Guidelines for chanhdai.com
+# AI Agent Guidelines for ramana.dev
 
-This guide provides essential information for AI agents working with the chanhdai.com codebase - a Next.js dev portfolio, blog, and component registry website.
+This guide provides essential information for AI agents working with the ramana.dev codebase - a Next.js dev portfolio, blog, and component registry website.
 
 ## Project Overview
 
@@ -178,7 +178,7 @@ The project uses PostHog for analytics tracking. Events are defined in `src/lib/
 
 - Navigation: `MAIN_NAV` in `src/config/site.ts`
 - Theme colors: `META_THEME_COLORS`
-- GitHub repo: `SOURCE_CODE_GITHUB_REPO`
+- GitHub repo: `SOURCE_CODE_GITHUB_REPO` (ramanak003/ramana.dev)
 
 ## Common Tasks
 

@@ -34,7 +34,7 @@ export const PROJECTS: Project[] = [
     period: {
       start: "01.2025",
     },
-    link: "https://github.com/ramanak003/ramana.dev",
+    link: "https://ramanak003.github.io/ramana.dev/",
     skills: [
       "Open Source",
       "Next.js 16",
@@ -45,9 +45,14 @@ export const PROJECTS: Project[] = [
       "Component Registry",
       "Vercel",
     ],
-    description:
-      "A minimal, pixel-perfect dev portfolio, component registry, and blog.",
+    description: `A minimal, pixel-perfect dev portfolio, component registry, and blog built with modern web technologies.
+- **Component Registry** – Custom shadcn-like registry for reusable components
+- **MDX Blog** – Content-driven blog with full MDX support
+- **Modern Stack** – Built with Next.js 16 and Tailwind CSS v4
+- **Optimized Performance** – Static export with rich animations and responsive design
+`,
     logo: "/images/projects/ramana-dev-logo.png",
+    isExpanded: true,
   },
   {
     id: "application-landing-page",
