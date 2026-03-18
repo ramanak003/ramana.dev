@@ -6,8 +6,8 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   transpilePackages: ["next-mdx-remote", "radix-ui", "motion", "framer-motion"],
   allowedDevOrigins: [],
-  basePath: process.env.NEXT_PUBLIC_BASE_PATH || (process.env.NODE_ENV === 'production' ? '/ramana.dev' : ""),
-  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || (process.env.NODE_ENV === 'production' ? '/ramana.dev' : ""),
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || (process.env.VERCEL === '1' ? "" : (process.env.GITHUB_ACTIONS === 'true' ? '/ramana.dev' : "")),
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || (process.env.VERCEL === '1' ? "" : (process.env.GITHUB_ACTIONS === 'true' ? '/ramana.dev' : "")),
   devIndicators: false,
   output: "export",
   images: {

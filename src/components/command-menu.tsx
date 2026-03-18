@@ -114,12 +114,16 @@ const PORTFOLIO_LINKS: CommandLinkItem[] = [
   },
 ]
 
-const SOCIAL_LINK_ITEMS: CommandLinkItem[] = SOCIAL_LINKS.map((item) => ({
-  title: item.title,
-  href: item.href,
-  iconImage: item.icon,
-  openInNewTab: true,
-}))
+const SOCIAL_LINK_ITEMS: CommandLinkItem[] = SOCIAL_LINKS.map((item) => {
+  const isSvgIcon = item.icon in Icons
+  return {
+    title: item.title,
+    href: item.href,
+    icon: isSvgIcon ? Icons[item.icon as keyof typeof Icons] : undefined,
+    iconImage: isSvgIcon ? undefined : item.icon,
+    openInNewTab: true,
+  }
+})
 
 
 export function CommandMenu() {

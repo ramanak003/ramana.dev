@@ -1,5 +1,5 @@
 export type SocialLink = {
-  /** Icon image URL (absolute or path under /public) shown beside the title. */
+  /** Icon name (from Icons component) or image URL shown beside the title. */
   icon: string
   title: string
   /** Optional handle/username or subtitle displayed under the title. */
