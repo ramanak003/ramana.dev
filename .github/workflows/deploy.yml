@@ -39,6 +39,7 @@ jobs:
           node-version: "22"
           cache: "pnpm"
       - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v5
         with:
           # Automatically inject basePath in your Next.js configuration file and disable
@@ -52,6 +53,7 @@ jobs:
         run: pnpm build
         env:
           GITHUB_API_TOKEN: ${{ secrets.GITHUB_API_TOKEN }}
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

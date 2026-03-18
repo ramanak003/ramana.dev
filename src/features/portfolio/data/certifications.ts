@@ -2,19 +2,16 @@ import type { Certification } from "../types/certifications"
 
 export const CERTIFICATIONS: Certification[] = [
     {
-        title: "Technical Internship: Fullstack Developer (Grade A)",
+        title: "Technical Internship: Fullstack Developer",
         issuer: "Duhzine IT Solutions",
         issueDate: "2026-02-16",
         credentialID: "",
-        credentialURL: "",
+        credentialURL: "https://drive.google.com/file/d/1cyeH1PNTgiNXqz-Iz59ocJBsC88Vuspa/view?usp=sharing",
         isExpanded: true,
         description: `
-**Technical Internship at Duhzine IT Solutions Pvt Ltd**
-- Duration: 07 Nov 2025 - 16 Feb 2026
-- Grade: A
+Intensive technical internship focusing on **Fullstack Development** and **UX/UI Design**. Developed and deployed modern web applications while adhering to industry-standard design principles and performance optimization.
 
-![Letter of Recommendation](/images/certifications/duhzine-lor.jpg)
-![Certificate of Achievement](/images/certifications/duhzine-certificate.jpg)
+[View Professional Certificate](https://drive.google.com/file/d/1cyeH1PNTgiNXqz-Iz59ocJBsC88Vuspa/view?usp=sharing)
 `,
     },
 ]

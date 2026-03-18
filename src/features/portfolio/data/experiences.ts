@@ -13,10 +13,10 @@ export const EXPERIENCES: Experience[] = [
           end: "02.2026",
         },
         employmentType: "Internship",
-        description: `Completed a three-month intensive technical internship focused on Fullstack Development and UX/UI Design.
-- **Fullstack Development** – Contributed to building and adapting emerging technologies with a high level of productivity.
-- **UX/UI Design** – Applied design principles as a UXUI Designer intern to enhance user interfaces and experiences.
-- **Collaboration** – Fostered strong collaboration with team members and demonstrated excellent analytical skills.`,
+        description: `Three-month intensive internship specializing in building modern web interfaces and scalable backend systems.
+- **Fullstack Development** – Developed high-performance applications using **React**, **Next.js**, and **TypeScript**.
+- **UX/UI Design** – Applied advanced design principles to create intuitive and user-centric interfaces.
+- **Technical Problem Solving** – Collaborated in an agile environment to resolve complex architectural challenges.`,
         icon: "code",
         skills: [
           "Fullstack Development",

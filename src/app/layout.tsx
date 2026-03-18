@@ -12,6 +12,7 @@ import { META_THEME_COLORS, SITE_INFO } from "@/config/site"
 import { USER } from "@/features/portfolio/data/user"
 import { fontMono, fontSans } from "@/lib/fonts"
 import { withBasePath } from "@/lib/utils"
+import { SOCIAL_LINKS } from "@/features/portfolio/data/social-links"
 
 function getWebSiteJsonLd(): WithContext<WebSite> {
   return {
@@ -20,6 +21,18 @@ function getWebSiteJsonLd(): WithContext<WebSite> {
     name: SITE_INFO.name,
     url: SITE_INFO.url,
     alternateName: [USER.username, "Problem Solver", "ramanaportfolio"],
+  }
+}
+
+function getPersonJsonLd(): WithContext<any> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: USER.displayName,
+    url: SITE_INFO.url,
+    jobTitle: USER.jobTitle,
+    description: SITE_INFO.description,
+    sameAs: SOCIAL_LINKS.map((link) => link.href),
   }
 }
 
@@ -80,8 +93,22 @@ export const metadata: Metadata = {
     images: [SITE_INFO.ogImage],
   },
   icons: {
-    icon: withBasePath("/favicon.ico"),
-    apple: withBasePath("/apple-touch-icon.png"),
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+  verification: {
+    google: "YOUR_GOOGLE_VERIFICATION_CODE_HERE", // Add code here from Search Console
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 }
 
@@ -117,6 +144,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(getWebSiteJsonLd()).replace(/</g, "\\u003c"),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(getPersonJsonLd()).replace(/</g, "\\u003c"),
           }}
         />
       </head>

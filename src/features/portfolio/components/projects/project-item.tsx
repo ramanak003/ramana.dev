@@ -38,7 +38,7 @@ export function ProjectItem({
         <div className="flex items-center hover:bg-accent-muted">
           {project.logo ? (
             <Image
-              src={withBasePath(project.logo)}
+              src={project.logo}
               alt={project.title}
               width={32}
               height={32}

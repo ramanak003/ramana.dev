@@ -25,7 +25,7 @@ export function ProfileHeader() {
         <div className="flex items-center gap-4 py-4 pl-4">
           <div className="relative size-32 shrink-0 overflow-hidden rounded-full border border-edge">
             <Image
-              src={withBasePath(USER.avatar)}
+              src={USER.avatar}
               alt={USER.displayName}
               fill
               className="object-cover"

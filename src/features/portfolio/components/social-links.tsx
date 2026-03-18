@@ -3,6 +3,7 @@ import Link from "next/link"
 
 import { SOCIAL_LINKS } from "../data/social-links"
 import { Panel, PanelContent } from "./panel"
+import { withBasePath } from "@/lib/utils"
 
 export function SocialLinks() {
     return (

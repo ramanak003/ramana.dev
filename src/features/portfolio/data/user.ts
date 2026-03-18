@@ -39,7 +39,7 @@ As a **Problem Solver**, I have built several personal and portfolio projects th
 I am also an active **Open Source Contributor**, continuously learning and aiming to grow as a professional software developer while contributing to impactful digital products.
 `,
   avatar: "/images/avatar.jpg",
-  ogImage: `${ASSETS_URL}/images/screenshot-og-image-dark.png?v=5`,
+  ogImage: "/images/screenshot-og-image-dark.png?v=5",
   namePronunciationUrl: "",
   timeZone: "Asia/Kolkata",
   keywords: [

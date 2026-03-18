@@ -3,10 +3,11 @@ import path from "path"
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  trailingSlash: true,
   transpilePackages: ["next-mdx-remote", "radix-ui", "motion", "framer-motion"],
   allowedDevOrigins: [],
-  basePath: "",
-  assetPrefix: "",
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || (process.env.NODE_ENV === 'production' ? '/ramana.dev' : ""),
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || (process.env.NODE_ENV === 'production' ? '/ramana.dev' : ""),
   devIndicators: false,
   output: "export",
   images: {
