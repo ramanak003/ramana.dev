@@ -1,11 +1,9 @@
-# [ramana.dev](https://ramana.dev) &middot; [![GitHub License](https://img.shields.io/github/license/ramanak003/ramana.dev?label=License)](https://github.com/ramanak003/ramana.dev/blob/main/LICENSE) ![GitHub Repo Views](https://gitviews.com/repo/ramanak003/ramana.dev.svg?style=flat&label-color=%23555&color=%23f59e0b)
+# [ramana.dev](https://ramana-dev.vercel.app) &middot; [![GitHub License](https://img.shields.io/github/license/ramanak003/ramana.dev?label=License)](https://github.com/ramanak003/ramana.dev/blob/main/LICENSE) ![GitHub Repo Views](https://gitviews.com/repo/ramanak003/ramana.dev.svg?style=flat&label-color=%23555&color=%23f59e0b)
 
 A minimal, pixel-perfect dev portfolio, component registry, and blog to showcase my work as a Design Engineer.
 
-→ Check out the live site: [ramana.dev](https://ramana.dev)
-
-[![screenshot-dark](https://assets.chanhdai.com/images/screenshot-desktop-dark.webp?v=5#gh-dark-mode-only)](https://ramana.dev#gh-dark-mode-only)
-[![screenshot-light](https://assets.chanhdai.com/images/screenshot-desktop-light.webp?v=5#gh-light-mode-only)](https://ramana.dev#gh-light-mode-only)
+[![screenshot-dark](https://assets.chanhdai.com/images/screenshot-desktop-dark.webp?v=5#gh-dark-mode-only)](https://ramana-dev.vercel.app#gh-dark-mode-only)
+[![screenshot-light](https://assets.chanhdai.com/images/screenshot-desktop-light.webp?v=5#gh-light-mode-only)](https://ramana-dev.vercel.app#gh-light-mode-only)
 
 ## Overview
 

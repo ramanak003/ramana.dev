@@ -8,7 +8,7 @@ import { lib } from "./registry-lib"
 
 export const registry = {
   name: "ramanak",
-  homepage: "https://ramana.dev/components",
+  homepage: "https://ramana-dev.vercel.app/components",
   items: [
     ...lib,
     ...hook,

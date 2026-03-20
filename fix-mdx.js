@@ -29,8 +29,8 @@ contentDirs.forEach((dir) => {
       "https://ramana.dev"
     )
     content = content.replace(
-      /https:\/\/ramana\.devr\//g,
-      "https://ramana.dev/r/"
+      /https:\/\/ramana\.dev/g,
+      "https://ramana-dev.vercel.app"
     )
 
     if (content !== original) {
