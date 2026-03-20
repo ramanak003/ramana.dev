@@ -57,6 +57,27 @@ export const PROJECTS: Project[] = [
     isExpanded: true,
   },
   {
+    id: "rex-website",
+    title: "Rex – Application Landing Page",
+    period: {
+      start: "01.2022",
+    },
+    link: "https://ramana-dev.vercel.app/projects/rex-website",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Responsive Web Design",
+      "GitHub Pages",
+    ],
+    description: `A high-performance landing page developed with core web technologies to showcase product features and user interfaces.
+- **Responsive Design** – Optimized layouts for mobile, tablet, and desktop viewports.
+- **Modern UI Architecture** – Clean, minimal design highlighting product value.
+- **Performance Optimization** – Lightweight static execution for near-instant load times.
+- **Hand-crafted Code** – Built with pure HTML, CSS, and JavaScript to demonstrate core development proficiency.`,
+    logo: "/images/projects/rex-logo.png",
+  },
+  {
     id: "application-landing-page",
     title: "Application Landing Page – Portfolio Description",
     period: {
@@ -73,28 +94,5 @@ export const PROJECTS: Project[] = [
 - **Modern UI** – Clean and minimal interface
 - **Product Showcase** – Application overview and highlights
 `,
-  },
-  {
-    id: "rex-website",
-    title: "Rex Website – Application Landing Page",
-    period: {
-      start: "01.2022",
-    },
-    link: "https://ramana-dev.vercel.app/projects/rex-website",
-    skills: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Responsive Web Design",
-      "GitHub Pages",
-    ],
-    description: `A modern responsive landing page designed to showcase web applications and product features with a clean and user-friendly interface.
-
-### Key Features
-- **Responsive Design** – Mobile, tablet, desktop support
-- **Modern UI** – Clean and professional interface
-- **Fast Performance** – Optimized static website
-- **Easy Navigation** – Simple and smooth user experience`,
-    logo: "/images/projects/rex-logo.png",
   },
 ]
