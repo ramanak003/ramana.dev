@@ -9,8 +9,6 @@ import {
   CircleCheckBigIcon,
   CornerDownLeftIcon,
   DownloadIcon,
-  FileTextIcon,
-  HeartIcon,
   LayersIcon,
   MoonStarIcon,
   MousePointer2Icon,
@@ -35,18 +33,19 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command"
-import { SOCIAL_LINKS } from "@/features/portfolio/data/social-links"
 import { CERTIFICATIONS } from "@/features/portfolio/data/certifications"
 import { EXPERIENCES } from "@/features/portfolio/data/experiences"
 import { PROJECTS } from "@/features/portfolio/data/projects"
+import { SOCIAL_LINKS } from "@/features/portfolio/data/social-links"
 import { TECH_STACK } from "@/features/portfolio/data/tech-stack"
 import { useDuckFollowerVisibility } from "@/hooks/use-duck-follower-visibility"
 import { useSound } from "@/hooks/use-sound"
 import { trackEvent } from "@/lib/events"
+import { withBasePath } from "@/lib/utils"
 import { copyText } from "@/utils/copy"
 
 import { Icons } from "./icons"
-import { getMarkSVG,SiteMark } from "./site-mark"
+import { getMarkSVG, SiteMark } from "./site-mark"
 import { getWordmarkSVG } from "./site-wordmark"
 import { Button } from "./ui/button"
 import { Kbd, KbdGroup } from "./ui/kbd"
@@ -124,7 +123,6 @@ const SOCIAL_LINK_ITEMS: CommandLinkItem[] = SOCIAL_LINKS.map((item) => {
     openInNewTab: true,
   }
 })
-
 
 export function CommandMenu() {
   const router = useRouter()
@@ -228,56 +226,53 @@ export function CommandMenu() {
     })
   }, [setIsDuckFollowerVisible])
 
-
-  const {
-    projectLinks,
-    techStackLinks,
-    experienceLinks,
-    certificationLinks,
-  } = useMemo(
-    () => ({
-      projectLinks: PROJECTS.map((project) => ({
-        id: project.id,
-        title: project.title,
-        href: project.link.startsWith("http") ? project.link : project.link, // Keep as is, might be external
-        iconImage: project.logo,
-        keywords: project.skills,
-        openInNewTab: project.link.startsWith("http"),
-      })),
-      techStackLinks: TECH_STACK.map((tech) => ({
-        id: tech.key,
-        title: tech.title,
-        href: tech.href,
-        iconImage: tech.theme
-          ? `/images/tech-stack/${tech.key}-dark.svg`
-          : `/images/tech-stack/${tech.key}.svg`,
-        keywords: tech.categories,
-        openInNewTab: true,
-      })),
-      experienceLinks: EXPERIENCES.flatMap((exp) =>
-        exp.positions.map((pos) => ({
-          id: pos.id,
-          title: `${pos.title} @ ${exp.companyName}`,
-          href: "/#experience", // Jump to experience section
-          icon:
-            pos.icon === "code"
-              ? BriefcaseBusinessIcon
-              : pos.icon === "education"
-                ? Icons.react // Or some other icon if education
-                : BriefcaseBusinessIcon,
-          keywords: pos.skills,
-        }))
-      ),
-      certificationLinks: CERTIFICATIONS.map((cert) => ({
-        id: cert.id || cert.title,
-        title: cert.title,
-        href: cert.credentialURL || "/#certs",
-        icon: CircleCheckBigIcon,
-        openInNewTab: !!cert.credentialURL,
-      })),
-    }),
-    []
-)
+  const { projectLinks, techStackLinks, experienceLinks, certificationLinks } =
+    useMemo(
+      () => ({
+        projectLinks: PROJECTS.map((project) => ({
+          id: project.id,
+          title: project.title,
+          href: project.link.startsWith("http") ? project.link : project.link, // Keep as is, might be external
+          iconImage: project.logo ? withBasePath(project.logo) : undefined,
+          keywords: project.skills,
+          openInNewTab: project.link.startsWith("http"),
+        })),
+        techStackLinks: TECH_STACK.map((tech) => ({
+          id: tech.key,
+          title: tech.title,
+          href: tech.href,
+          iconImage: withBasePath(
+            tech.theme
+              ? `/images/tech-stack/${tech.key}-dark.svg`
+              : `/images/tech-stack/${tech.key}.svg`
+          ),
+          keywords: tech.categories,
+          openInNewTab: true,
+        })),
+        experienceLinks: EXPERIENCES.flatMap((exp) =>
+          exp.positions.map((pos) => ({
+            id: pos.id,
+            title: `${pos.title} @ ${exp.companyName}`,
+            href: "/#experience", // Jump to experience section
+            icon:
+              pos.icon === "code"
+                ? BriefcaseBusinessIcon
+                : pos.icon === "education"
+                  ? Icons.react // Or some other icon if education
+                  : BriefcaseBusinessIcon,
+            keywords: pos.skills,
+          }))
+        ),
+        certificationLinks: CERTIFICATIONS.map((cert) => ({
+          id: cert.id || cert.title,
+          title: cert.title,
+          href: cert.credentialURL || "/#certs",
+          icon: CircleCheckBigIcon,
+          openInNewTab: !!cert.credentialURL,
+        })),
+      }),
+      []
+    )
 
   return (
     <>
@@ -329,8 +324,6 @@ export function CommandMenu() {
             onLinkSelect={handleOpenLink}
           />
 
-
-
           <CommandLinkGroup
             heading="Social Links"
             links={SOCIAL_LINK_ITEMS}
@@ -357,7 +350,6 @@ export function CommandMenu() {
             fallbackIcon={BriefcaseBusinessIcon}
             onLinkSelect={handleOpenLink}
           />
-
 
           <CommandLinkGroup
             heading="Certifications"
@@ -391,13 +383,10 @@ export function CommandMenu() {
               Copy Logotype as SVG
             </CommandItem>
 
-            <CommandItem
-              onSelect={() => handleOpenLink("/blog/site-brand")}
-            >
+            <CommandItem onSelect={() => handleOpenLink("/blog/site-brand")}>
               <TriangleDashedIcon />
               Brand Guidelines
             </CommandItem>
-
           </CommandGroup>
 
           <CommandGroup heading="Theme">
@@ -430,7 +419,6 @@ export function CommandMenu() {
               Toggle Duck Follower
             </CommandItem>
           </CommandGroup>
-
         </CommandList>
 
         <CommandMenuFooter />
@@ -492,7 +480,7 @@ function CommandLinkGroup({
             {link?.iconImage ? (
               <Image
                 className="rounded-sm corner-squircle supports-corner-shape:rounded-[50%]"
-                src={link.iconImage}
+                src={withBasePath(link.iconImage)}
                 alt={link.title}
                 width={16}
                 height={16}
@@ -555,7 +543,9 @@ function buildCommandMetaMap() {
     })
   })
   CERTIFICATIONS.forEach((item) => {
-    commandMetaMap.set(item.title, { commandKind: item.credentialURL ? "link" : "page" })
+    commandMetaMap.set(item.title, {
+      commandKind: item.credentialURL ? "link" : "page",
+    })
   })
 
   return commandMetaMap
@@ -597,4 +587,3 @@ function CommandMenuFooter() {
     </>
   )
 }
-

@@ -36,7 +36,9 @@ export function TechStack() {
                     {tech.theme ? (
                       <>
                         <Image
-                          src={`/images/tech-stack/${tech.key}-light.svg`}
+                          src={withBasePath(
+                            `/images/tech-stack/${tech.key}-light.svg`
+                          )}
                           alt={`${tech.title} light icon`}
                           width={32}
                           height={32}
@@ -44,7 +46,9 @@ export function TechStack() {
                           unoptimized
                         />
                         <Image
-                          src={`/images/tech-stack/${tech.key}-dark.svg`}
+                          src={withBasePath(
+                            `/images/tech-stack/${tech.key}-dark.svg`
+                          )}
                           alt={`${tech.title} dark icon`}
                           width={32}
                           height={32}
@@ -54,7 +58,7 @@ export function TechStack() {
                       </>
                     ) : (
                       <Image
-                        src={`/images/tech-stack/${tech.key}.svg`}
+                        src={withBasePath(`/images/tech-stack/${tech.key}.svg`)}
                         alt={`${tech.title} icon`}
                         width={32}
                         height={32}

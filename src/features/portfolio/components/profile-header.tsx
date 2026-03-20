@@ -1,5 +1,4 @@
 "use client"
-import { motion } from "motion/react"
 import Image from "next/image"
 
 import { USER } from "@/features/portfolio/data/user"
@@ -25,7 +24,7 @@ export function ProfileHeader() {
         <div className="flex items-center gap-4 py-4 pl-4">
           <div className="relative size-32 shrink-0 overflow-hidden rounded-full border border-edge">
             <Image
-              src={USER.avatar}
+              src={withBasePath(USER.avatar)}
               alt={USER.displayName}
               fill
               className="object-cover"

@@ -3,16 +3,16 @@ import "@/styles/globals.css"
 import type { Metadata, Viewport } from "next"
 import Script from "next/script"
 import { NuqsAdapter } from "nuqs/adapters/next/app"
-import type { WebSite, WithContext } from "schema-dts"
+import type { Person, WebSite, WithContext } from "schema-dts"
 
 import { ConsentManager } from "@/components/consent-manager"
 import { DuckFollower } from "@/components/duck-follower"
 import { Providers } from "@/components/providers"
 import { META_THEME_COLORS, SITE_INFO } from "@/config/site"
+import { SOCIAL_LINKS } from "@/features/portfolio/data/social-links"
 import { USER } from "@/features/portfolio/data/user"
 import { fontMono, fontSans } from "@/lib/fonts"
 import { withBasePath } from "@/lib/utils"
-import { SOCIAL_LINKS } from "@/features/portfolio/data/social-links"
 
 function getWebSiteJsonLd(): WithContext<WebSite> {
   return {
@@ -24,7 +24,7 @@ function getWebSiteJsonLd(): WithContext<WebSite> {
   }
 }
 
-function getPersonJsonLd(): WithContext<any> {
+function getPersonJsonLd(): WithContext<Person> {
   return {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -93,8 +93,8 @@ export const metadata: Metadata = {
     images: [SITE_INFO.ogImage],
   },
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    icon: withBasePath("/favicon.ico"),
+    apple: withBasePath("/apple-touch-icon.png"),
   },
   verification: {
     google: "YOUR_GOOGLE_VERIFICATION_CODE_HERE", // Add code here from Search Console
