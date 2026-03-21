@@ -57,7 +57,7 @@ export function CurrentLocalTimeItem({ timeZone }: CurrentLocalTimeItemProps) {
 
       // Get time in target timezone using TZDate
       const targetTime = TZDate.tz(timeZone)
-      const formattedTime = format(targetTime, "HH:mm")
+      const formattedTime = format(targetTime, "hh:mm a · MMM dd")
       setTimeString(formattedTime)
 
       // Get hour for clock icon (1-12)
@@ -96,7 +96,7 @@ export function CurrentLocalTimeItem({ timeZone }: CurrentLocalTimeItemProps) {
           <Clock12Icon />
         </IntroItemIcon>
 
-        <IntroItemContent>00:00</IntroItemContent>
+        <IntroItemContent>00:00 AM</IntroItemContent>
       </IntroItem>
     )
   }
