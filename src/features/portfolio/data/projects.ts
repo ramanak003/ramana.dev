@@ -8,6 +8,7 @@ export const PROJECTS: Project[] = [
       start: "01.2025",
     },
     link: "https://ramana-dev.vercel.app",
+    github: "https://github.com/ramanak003/ramana.dev",
     skills: [
       "Open Source",
       "Next.js 16",
@@ -23,8 +24,6 @@ export const PROJECTS: Project[] = [
 - **MDX Blog** – Content-driven blog with full MDX support
 - **Modern Stack** – Built with Next.js 16 and Tailwind CSS v4
 - **Optimized Performance** – Static export with rich animations and responsive design
-
-[Source Code](https://github.com/ramanak003/ramana.dev)
 `,
     logo: "/images/projects/ramana-dev-logo.png",
     isExpanded: true,
@@ -94,5 +93,26 @@ export const PROJECTS: Project[] = [
 - **Modern UI** – Clean and minimal interface
 - **Product Showcase** – Application overview and highlights
 `,
+  },
+  {
+    id: "movie-hunt",
+    title: "CineSearch – Real-Time Movie Explorer",
+    period: {
+      start: "02.2026",
+    },
+    link: "https://github.com/ramanak003/Moive-Hunt",
+    skills: ["React.js", "JavaScript", "HTML5", "CSS3", "TMDB API", "Vercel"],
+    description: `A modern real-time movie search web application that allows users to instantly explore and discover movies with live data fetched from an external API.
+
+### Key Features
+- **🔍 Real-Time Movie Search** – Instant results using API
+- **🎬 Movie Details** – Ratings, release date, overview
+- **📊 Trending Movies** – Latest popular movies
+- **⚡ API Integration** – Real-time data fetching
+- **📱 Responsive UI** – Mobile + desktop optimized
+- **☁️ Deployment** – Vercel
+`,
+    logo: "/images/projects/movie-hunt-logo.png",
+    isExpanded: true,
   },
 ]

@@ -1,4 +1,4 @@
-import { BoxIcon, InfinityIcon, LinkIcon } from "lucide-react"
+import { BoxIcon, GithubIcon, InfinityIcon, LinkIcon } from "lucide-react"
 import Image from "next/image"
 
 import { Markdown } from "@/components/markdown"
@@ -124,7 +124,7 @@ export function ProjectItem({
                 </ProseMono>
               )}
 
-              <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
                 {project.skills.length > 0 && (
                   <ul className="flex flex-wrap gap-1.5">
                     {project.skills.map((skill, index) => (
@@ -135,15 +135,19 @@ export function ProjectItem({
                   </ul>
                 )}
 
-                <a
-                  href={addQueryParams(project.link, UTM_PARAMS)}
-                  target="_blank"
-                  rel="noopener"
-                  className="inline-flex shrink-0 items-center justify-center gap-1.5 rounded-lg border border-border bg-background px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:bg-muted lg:py-1"
-                >
-                  Visit Site
-                  <LinkIcon className="size-3" />
-                </a>
+                <div className="flex shrink-0 items-center gap-2">
+                  {project.github && (
+                    <a
+                      href={addQueryParams(project.github, UTM_PARAMS)}
+                      target="_blank"
+                      rel="noopener"
+                      className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-border bg-background px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:bg-muted lg:py-1"
+                    >
+                      View Source
+                      <GithubIcon className="size-3" />
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           </div>
