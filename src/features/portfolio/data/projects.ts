@@ -98,19 +98,19 @@ export const PROJECTS: Project[] = [
     id: "movie-hunt",
     title: "CineSearch – Real-Time Movie Explorer",
     period: {
-      start: "03.2026",
+      start: "21.03.2026",
     },
     link: "https://github.com/ramanak003/Moive-Hunt",
     skills: ["React.js", "JavaScript", "HTML5", "CSS3", "TMDB API", "Vercel"],
     description: `A modern real-time movie search web application that allows users to instantly explore and discover movies with live data fetched from an external API.
 
 ### Key Features
-- **Real-Time Movie Search** – Instant results using API
-- **Movie Details** – Ratings, release date, overview
-- **Trending Movies** – Latest popular movies
-- **API Integration** – Real-time data fetching
-- **Responsive UI** – Mobile + desktop optimized
-- **Deployment** – Vercel
+- **🔍 Real-Time Movie Search** – Instant results using API
+- **🎬 Movie Details** – Ratings, release date, overview
+- **📊 Trending Movies** – Latest popular movies
+- **⚡ API Integration** – Real-time data fetching
+- **📱 Responsive UI** – Mobile + desktop optimized
+- **☁️ Deployment** – Vercel
 `,
     logo: "/images/projects/movie-hunt-logo.png",
     isExpanded: true,
